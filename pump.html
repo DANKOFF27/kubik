@@ -1,0 +1,81 @@
+<div class="conteiner-box">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+.conteiner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box1 {
+    margin-right: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: blue;
+    animation: box1 5s linear infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+@keyframes box1{
+    from{
+        transform:scale(0);
+        color: #ff0000;
+    }
+    to{
+        transform:scale(1.4);
+        color: #00ff0d;
+    }
+}
+.box2 {
+    margin-right: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgb(9, 255, 0);
+    animation: box2 5s linear infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+@keyframes box2{
+    from{
+        background-color: rgb(255, 0, 251);
+    }
+    to{
+        background-color: rgb(255, 0, 0);
+    }
+    from{
+        background-color: rgb(0, 68, 255);
+    }
+    to{
+        background-color: rgb(238, 255, 0);
+    }
+}
+.box3 {
+    margin-right: 5px;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: rgb(255, 162, 0);
+    animation: box3 5s linear infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+@keyframes box3{
+    from{
+        transform:scale(1.4);
+        color: #cc00ff;
+    }
+    to{
+        transform:scale(0);
+        color: #ff0040;
+    }
+}
